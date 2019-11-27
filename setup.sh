@@ -135,7 +135,10 @@ snap install skype --classic
 apt install -y copyq default-jre
 
 # Screenshot tool
-apt install -y flameshot
+apt install -y flameshot xbindkeys
+gsettings set org.gnome.settings-daemon.plugins.media-keys screenshot ['']
+sudo -u $(users) echo '"flameshot gui"
+Mod2 + Print' > ~/.xbindkeysrc
 
 # Chrome
 echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >  /etc/apt/sources.list.d/google-chrome.list
@@ -160,14 +163,5 @@ StartupNotify=true
 Icon=/opt/giteye/icon.xpm
 Name[en_US]=GitEye" > /usr/share/applications/giteye.desktop
 
-# Reminders:
-echo "Please disable the default printscreen shortcut in Ubuntu, and set a new one for 'flameshot gui'."
-echo "1. Open 'Keyboard Shortcuts' in system settings"
-echo "2. Find 'Save a screenshot to Pictures' and disable it"
-echo "3. Scroll to the bottom and add a custom one:"
-echo "  - Name: Flameshot"
-echo "  - Command: 'flameshot gui'"
-echo "  - Shortcut: Print"
-echo "Press [Enter] when done."
-read printscr
-
+# reboot
+reboot
