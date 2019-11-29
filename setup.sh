@@ -1,8 +1,9 @@
 #!/bin/bash
 
-if [[ -f "~/ubuntu-setup.log" ]]
+# prevent running if log file already exists, no need for running this twice
+if [ -f /home/$(users)/ubuntu-setup.log ]
 	then
-		echo "Setup already run. Please check the log at '~/ubuntu-setup.log'."
+		echo "Setup already run. Please check the log at '/home/$(users)/ubuntu-setup.log'."
 		exit 0
 fi
 
