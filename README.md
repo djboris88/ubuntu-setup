@@ -1,6 +1,6 @@
 # Ubuntu 19.10 Setup script
 
-_A set of bash commands to streamline setup of a clean Ubuntu 19.10 installation
+_A set of bash commands to streamline setup of a **clean Ubuntu 19.10 installation**
 as a PHP development machine, including AMP stack, necessary PHP modules, Composer, NPM/Gulp, 
 some of the most popular IDEs and text editors, and basic every-day apps: clipboard manager, 
 screenshot tool, git client..._
