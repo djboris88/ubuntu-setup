@@ -54,6 +54,7 @@ When calling `vhost delete` both of those will be removed. Apache is reloaded in
 
 ### Dev tools
 - Composer
+- WP-CLI
 - NVM, Node.js, Gulp, Yarn
 - Git, set up global `user.name` and `user.email`
 
