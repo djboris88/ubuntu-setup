@@ -9,7 +9,7 @@ screenshot tool, git client..._
 
 To start the setup, run this command in terminal:
 ```shell script
-curl -s https://raw.githubusercontent.com/djboris88/ubuntu-setup/master/setup.sh | sudo bash
+bash <(wget -qO- https://raw.githubusercontent.com/djboris88/ubuntu-setup/master/setup.sh)
 ```
 
 Log will be stored in the `~/ubuntu-setup.log` file. You are only allowed to run the script once per 
