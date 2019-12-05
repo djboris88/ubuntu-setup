@@ -35,6 +35,8 @@ apt install -y apache2
 systemctl start apache2
 systemctl enable apache2
 
+a2enmod rewrite
+
 # setup permissions for /var/www
 gpasswd -a "$(users)" www-data
 chown -R www-data:www-data /var/www
